@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@color/header"
+	>
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		>
+ 		<TextView android:id="@+id/txtTitle" style="@style/title"
+			android:text="@string/select_account"
+			android:layout_marginBottom="30dp" 
+		/>
+	    <ImageView android:id="@+id/btnSina" 
+		    android:src="@drawable/sina_big"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	
+		    android:layout_centerInParent="true"
+		    android:clickable="true"
+		    />
+	</LinearLayout>
+	<Button android:id="@+id/btnSkip"
+	    android:text="@string/skip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp"
+	    android:textColor="@color/tab"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:padding="@dimen/padding"
+	    android:background="@drawable/icon_clickable"
+	    />
+</RelativeLayout>
