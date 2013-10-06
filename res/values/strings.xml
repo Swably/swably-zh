@@ -230,4 +230,17 @@
     <string name="stream">主页</string> 
     <string name="stream_cap">主页</string> 
     <string name="claimed_apps">认领的应用</string>
+
+    <string name="share_no_app_x">你没有安装%s</string>
+    <string name="share_title">分享到</string>
+    <string name="share_link">链接</string>
+    <string name="share_private">私密</string>
+    <string name="share_private1">易信</string>
+    <string name="share_private2">微信</string>
+    <string name="share_private3">QQ</string>
+    <string name="share_public">公开</string>
+    <string name="share_public1">新浪微博</string>
+    <string name="share_public2">微信朋友圈</string>
+    <string name="share_public3">腾讯微博</string>
+    <string name="link_copied">链接已拷贝到剪贴板</string>
 </resources>

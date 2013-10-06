@@ -2,4 +2,10 @@
 <resources>
     <string name="host1">zh.swably.com</string>
     
+    <string name="share_package_private1">im.yixin</string>
+    <string name="share_package_private2">com.tencent.mm</string>
+    <string name="share_package_private3">com.tencent.mobileqq</string>
+    <string name="share_package_public1">com.sina.weibo</string>
+    <string name="share_package_public2">com.tencent.mm</string>
+    <string name="share_package_public3">com.tencent.WBlog</string>
 </resources>

@@ -1,5 +1,8 @@
 package goofy2.swably.zh;
 
+import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.tencent.mm.sdk.openapi.WXAPIFactory;
+
 import goofy2.swably.Const;
 import goofy2.swably.Utils;
 import android.app.Application;
@@ -35,7 +38,16 @@ public class ApplicationZh extends SwablyApplication {
 		Const.BROADCAST_REFRESH_USER = "goofy2.swably.zh.REVIEW_USER";
 		Const.BROADCAST_FINISH = "goofy2.swably.zh.FINISH";
 		
+		Const.SHARE_PUBLIC_ACTIVITY = SharePublicActivity.class;
+		
+		regToWx();
 	}
 	
+	private void regToWx(){
+		IWXAPI api = WXAPIFactory.createWXAPI(this, goofy2.swably.zh.Const.WECHAT_APP_ID, false);
+//		api.unregisterApp();
+		boolean ret = api.registerApp(goofy2.swably.zh.Const.WECHAT_APP_ID);
+//	    Toast.makeText(getApplicationContext(), ret ? "true" : "false", Toast.LENGTH_SHORT).show();
+	}
 
 }
