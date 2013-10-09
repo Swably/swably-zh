@@ -3,24 +3,20 @@ package goofy2.swably.zh;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import goofy2.swably.R;
 import goofy2.swably.Utils;
 import goofy2.swably.data.App;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
-import com.tencent.mm.sdk.openapi.WXImageObject;
 import com.tencent.mm.sdk.openapi.WXMediaMessage;
 import com.tencent.mm.sdk.openapi.WXTextObject;
 import com.tencent.mm.sdk.openapi.WXWebpageObject;
 
-public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
+public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +31,7 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 //		regToWx();
 				
 		
-		btnPublic2.setOnClickListener(new View.OnClickListener() {
+		btnPrivate2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 //				WXTextObject textObj = new WXTextObject();
@@ -54,14 +50,15 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 //				IWXAPI api = WXAPIFactory.createWXAPI(SharePublicActivity.this, Const.WECHAT_APP_ID, false);
 //				api.sendReq(req);
 				
-
+				
 				String title = null, description = null, url = null, iconUrl = null;
 				Bitmap bitmap = null;
 				
 				if(shareApp != null){
 					try {
 						App app = new App(new JSONObject(shareApp));
-						title = app.getName();
+						title = "分享一个应用";
+						description = app.getName();
 						url = Utils.genAppUrl(app);
 						iconUrl = app.getIcon();
 					} catch (JSONException e) {
@@ -73,7 +70,8 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 					try {
 						JSONObject review = new JSONObject(shareReview);
 						App app = new App(review.optJSONObject("app"));
-						title = "#" + app.getName() + " " + review.optString("content") + " -- @" + review.optJSONObject("user").optString("screen_name");
+						title = app.getName();
+						description = review.optString("content") + " -- @" + review.optJSONObject("user").optString("screen_name");
 						url = Utils.genReviewUrl(review);
 						iconUrl = app.getIcon();
 					} catch (JSONException e) {
@@ -86,7 +84,7 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 				}
 				
 				bitmap = Utils.getImageFromFile(getApplicationContext(), iconUrl);
-
+				
 				WXWebpageObject webpage = new WXWebpageObject();
 				webpage.webpageUrl = url;
 				WXMediaMessage msg = new WXMediaMessage(webpage);
@@ -98,9 +96,9 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 				SendMessageToWX.Req req = new SendMessageToWX.Req();
 				req.transaction = String.valueOf(System.currentTimeMillis());
 				req.message = msg;
-				req.scene = SendMessageToWX.Req.WXSceneTimeline;
+				req.scene = SendMessageToWX.Req.WXSceneSession;
 
-				IWXAPI api = WXAPIFactory.createWXAPI(SharePublicActivity.this, Const.WECHAT_APP_ID, false);
+				IWXAPI api = WXAPIFactory.createWXAPI(SharePrivateActivity.this, Const.WECHAT_APP_ID, false);
 				api.sendReq(req);
 				
 				
@@ -110,6 +108,4 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 		
 
 	}
-
-
 }

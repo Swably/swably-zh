@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.5.3.1" android:versionCode="1531">
+      android:versionName="1.5.4" android:versionCode="1540">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
@@ -107,7 +107,7 @@
         <activity android:name="goofy2.swably.SelectLocalAppToPick" android:theme="@style/PickLocalAppsActivity" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Settings" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.ShareActivity" android:theme="@style/defaultDialog" />
-        <activity android:name="goofy2.swably.SharePrivateActivity" android:theme="@style/defaultDialog" />
+        <activity android:name=".SharePrivateActivity" android:theme="@style/defaultDialog" />
         <activity android:name=".SharePublicActivity" android:theme="@style/defaultDialog" />
         <activity android:name="goofy2.swably.SignedIn" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.SnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>

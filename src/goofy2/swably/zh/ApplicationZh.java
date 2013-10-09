@@ -38,6 +38,7 @@ public class ApplicationZh extends SwablyApplication {
 		Const.BROADCAST_REFRESH_USER = "goofy2.swably.zh.REVIEW_USER";
 		Const.BROADCAST_FINISH = "goofy2.swably.zh.FINISH";
 		
+		Const.SHARE_PRIVATE_ACTIVITY = SharePrivateActivity.class;
 		Const.SHARE_PUBLIC_ACTIVITY = SharePublicActivity.class;
 		
 		regToWx();
