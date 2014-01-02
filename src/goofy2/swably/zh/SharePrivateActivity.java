@@ -83,7 +83,8 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 					description = shareText;
 				}
 				
-				bitmap = Utils.getImageFromFile(getApplicationContext(), iconUrl);
+//				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 42, 42); // 微信要求thumbData不能超过32KB,即84*84
+				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 84, 84); // 微信要求thumbData不能超过32KB,即84*84
 				
 				WXWebpageObject webpage = new WXWebpageObject();
 				webpage.webpageUrl = url;
@@ -91,7 +92,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				msg.title = title;
 				msg.description = description;
 //				msg.setThumbImage(bitmap);
-				msg.thumbData = Utils.bmpToByteArray(bitmap, true);
+				if(bitmap != null) msg.thumbData = Utils.bmpToByteArray(bitmap, true);
 				
 				SendMessageToWX.Req req = new SendMessageToWX.Req();
 				req.transaction = String.valueOf(System.currentTimeMillis());
@@ -99,7 +100,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				req.scene = SendMessageToWX.Req.WXSceneSession;
 
 				IWXAPI api = WXAPIFactory.createWXAPI(SharePrivateActivity.this, Const.WECHAT_APP_ID, false);
-				api.sendReq(req);
+				boolean result = api.sendReq(req);
 				
 				
 				finish();

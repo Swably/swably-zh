@@ -85,7 +85,8 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 					description = shareText;
 				}
 				
-				bitmap = Utils.getImageFromFile(getApplicationContext(), iconUrl);
+//				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 42, 42); // 微信要求thumbData不能超过32KB,即84*84
+				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 84, 84); // 微信要求thumbData不能超过32KB,即84*84
 
 				WXWebpageObject webpage = new WXWebpageObject();
 				webpage.webpageUrl = url;
@@ -93,7 +94,7 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 				msg.title = title;
 				msg.description = description;
 //				msg.setThumbImage(bitmap);
-				msg.thumbData = Utils.bmpToByteArray(bitmap, true);
+				if(bitmap != null) msg.thumbData = Utils.bmpToByteArray(bitmap, true);
 				
 				SendMessageToWX.Req req = new SendMessageToWX.Req();
 				req.transaction = String.valueOf(System.currentTimeMillis());
