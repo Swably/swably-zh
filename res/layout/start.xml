@@ -4,24 +4,51 @@
 	android:layout_height="fill_parent"
 	android:background="@color/header"
 	>
-	<LinearLayout 
+	<LinearLayout android:id="@+id/viewHeaderBar" style="@style/titleBar" >
+		<TextView android:id="@+id/txtTitle" android:text="@string/select_signin" style="@style/title"/>
+	</LinearLayout>
+	<View android:background="#00a1e9" android:layout_height="1dp" android:layout_width="fill_parent" android:layout_below="@id/viewHeaderBar"/>
+   	<LinearLayout 
 		android:orientation="vertical" 
 		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"
-		android:layout_centerInParent="true"
-		android:gravity="center"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/viewHeaderBar"
 		>
- 		<TextView android:id="@+id/txtTitle" style="@style/title"
-			android:text="@string/select_account"
-			android:layout_marginBottom="30dp" 
-		/>
-	    <ImageView android:id="@+id/btnSina" 
-		    android:src="@drawable/sina_big"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"	
-		    android:layout_centerInParent="true"
-		    android:clickable="true"
-		    />
+		<LinearLayout 
+			android:orientation="vertical" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+		</LinearLayout>
+		<ImageView android:id="@+id/btnSina" 
+			    android:src="@drawable/sina_big"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	
+			    android:layout_gravity="center"
+			    android:clickable="true"
+			    />
+		<LinearLayout 
+			android:orientation="vertical" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+		</LinearLayout>
+		    <ImageView android:id="@+id/btnQq" 
+			    android:src="@drawable/qq_big"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"	
+			    android:layout_gravity="center"
+			    android:clickable="true"
+			    />
+		<LinearLayout 
+			android:orientation="vertical" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+		</LinearLayout>
 	</LinearLayout>
 	<Button android:id="@+id/btnSkip"
 	    android:text="@string/skip"

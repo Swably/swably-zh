@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.5.4" android:versionCode="1540">
+      android:versionName="1.572" android:versionCode="1572">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
@@ -19,6 +19,8 @@
 			<meta-data android:name="android.app.default_searchable"
 	            android:value="goofy2.swably.SearchApps" />
         </activity>
+        <activity android:name="goofy2.swably.AppHistory" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.AppUploaders" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Claiming" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Cover" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"/>
    	    <activity android:name="goofy2.swably.DownloadingApp" android:theme="@style/defaultActivity.faceInOut" android:screenOrientation="portrait"/>
@@ -111,7 +113,7 @@
         <activity android:name=".SharePublicActivity" android:theme="@style/defaultDialog" />
         <activity android:name="goofy2.swably.SignedIn" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.SnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-        <activity android:name="goofy2.swably.Start" android:screenOrientation="portrait"/>
+        <activity android:name=".Start" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.Suggestions" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Terms" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.UploadApp" android:screenOrientation="portrait"/>
@@ -121,7 +123,8 @@
 	    <activity android:name="goofy2.swably.UserStarredApps" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.UserFollowers" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.UserFollowing" android:screenOrientation="portrait"/>
-	    	    
+        <activity android:name="goofy2.swably.UserUploadedApps" android:screenOrientation="portrait"/>
+	    	    	    
 		<receiver android:name="goofy2.swably.Booter">
 		    <intent-filter>
 		        <action android:name="android.intent.action.BOOT_COMPLETED"></action>

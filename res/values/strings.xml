@@ -65,6 +65,7 @@
 	<string name="app_updated_on">更新于%s</string>
 	<string name="reviews_count">%d条评论</string>
 	<string name="likes_count">%d个喜欢</string>
+    <string name="uploads_count">%d次上传</string>
 	<string name="not_in_cloud">%s目前不在万宝乐上，立刻上传分享</string>
 	<string name="terms_short">请不要上传别人开发的收费应用</string>
 	<string name="uploading_queued">正在上传，请稍候...</string>
@@ -243,4 +244,15 @@
     <string name="share_public2">微信朋友圈</string>
     <string name="share_public3">腾讯微博</string>
     <string name="link_copied">链接已拷贝到剪贴板</string>
+
+    <string name="uploaders">上传者</string>
+    <string name="recent_uploaders">最近上传者</string>
+    <string name="uploadees">上传的应用</string>
+    <string name="recent_uploadees">最近上传的应用</string>
+    <string name="upload_history">上传历史</string>
+
+    <string name="submit_email">请提交电子邮件以得到通知</string>
+    <string name="err_invalid_email">这不是一个有效的电子邮件地址</string>
+   	<string name="select_signin">选择社交登录</string>
+   	
 </resources>

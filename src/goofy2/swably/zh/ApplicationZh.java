@@ -40,6 +40,7 @@ public class ApplicationZh extends SwablyApplication {
 		
 		Const.SHARE_PRIVATE_ACTIVITY = SharePrivateActivity.class;
 		Const.SHARE_PUBLIC_ACTIVITY = SharePublicActivity.class;
+		Const.START_ACTIVITY = Start.class;
 		
 		regToWx();
 	}
