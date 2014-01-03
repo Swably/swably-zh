@@ -254,5 +254,7 @@
     <string name="submit_email">请提交电子邮件以得到通知</string>
     <string name="err_invalid_email">这不是一个有效的电子邮件地址</string>
    	<string name="select_signin">选择社交登录</string>
-   	
+   	<string name="onWeiBoNotInstalled">您没有安装腾讯微博客户端</string>
+   	<string name="onWeiboVersionMisMatch">您的腾讯微博客户端版本不匹配</string>
+   			
 </resources>
