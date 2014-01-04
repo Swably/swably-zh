@@ -1,10 +1,10 @@
 package goofy2.swably.zh;
 
 //import com.tencent.weibo.sdk.android.api.util.Util;
-import com.tencent.weibo.sdk.android.component.Authorize;
-import com.tencent.weibo.sdk.android.component.sso.AuthHelper;
-import com.tencent.weibo.sdk.android.component.sso.OnAuthListener;
-import com.tencent.weibo.sdk.android.component.sso.WeiboToken;
+//import com.tencent.weibo.sdk.android.component.Authorize;
+//import com.tencent.weibo.sdk.android.component.sso.AuthHelper;
+//import com.tencent.weibo.sdk.android.component.sso.OnAuthListener;
+//import com.tencent.weibo.sdk.android.component.sso.WeiboToken;
 import com.weibo.sdk.android.Weibo;
 import com.weibo.sdk.android.WeiboAuthListener;
 import com.weibo.sdk.android.WeiboDialogError;
@@ -23,7 +23,7 @@ import goofy2.swably.Utils;
 public class Start extends goofy2.swably.StartBase {
 	private static final int REQUEST_CODE_QQ_WEBAUTH = 59372;
 	private SsoHandler mSsoHandler;
-	private OnAuthListener qqAuthListener;
+//	private OnAuthListener qqAuthListener;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
