@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.analytics.tracking.android.MapBuilder;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
@@ -92,7 +93,7 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 				webpage.webpageUrl = url;
 				WXMediaMessage msg = new WXMediaMessage(webpage);
 				msg.title = title;
-				msg.description = description;
+				msg.description = description.replace("?r=share", "?r="+getString(R.string.share_public2_id));
 //				msg.setThumbImage(bitmap);
 				if(bitmap != null) msg.thumbData = Utils.bmpToByteArray(bitmap, true);
 				
@@ -106,6 +107,7 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 				
 				
 				finish();
+				tracker.send(MapBuilder.createEvent("ui_action", "button_press", getString(R.string.share_public2), null).build());
 			}
 		});
 		

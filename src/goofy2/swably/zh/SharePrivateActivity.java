@@ -3,12 +3,14 @@ package goofy2.swably.zh;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import goofy2.swably.R;
 import goofy2.swably.Utils;
 import goofy2.swably.data.App;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.analytics.tracking.android.MapBuilder;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.SendMessageToWX;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
@@ -90,7 +92,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				webpage.webpageUrl = url;
 				WXMediaMessage msg = new WXMediaMessage(webpage);
 				msg.title = title;
-				msg.description = description;
+				msg.description = description.replace("?r=share", "?r="+getString(R.string.share_private2_id));
 //				msg.setThumbImage(bitmap);
 				if(bitmap != null) msg.thumbData = Utils.bmpToByteArray(bitmap, true);
 				
@@ -104,6 +106,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				
 				
 				finish();
+				tracker.send(MapBuilder.createEvent("ui_action", "button_press", getString(R.string.share_private2), null).build());
 			}
 		});
 		
