@@ -89,10 +89,10 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 84, 84); // 微信要求thumbData不能超过32KB,即84*84
 				
 				WXWebpageObject webpage = new WXWebpageObject();
-				webpage.webpageUrl = url;
+				webpage.webpageUrl = url.replace("?r=share", "?r="+getString(R.string.share_private2_id));
 				WXMediaMessage msg = new WXMediaMessage(webpage);
 				msg.title = title;
-				msg.description = description.replace("?r=share", "?r="+getString(R.string.share_private2_id));
+				msg.description = description;
 //				msg.setThumbImage(bitmap);
 				if(bitmap != null) msg.thumbData = Utils.bmpToByteArray(bitmap, true);
 				
