@@ -187,7 +187,7 @@
 
 	<string name="shuffle">随机发现</string>
     <string name="copied">文本已复制到剪贴板</string>
-    <string name="request_an_app">应用求助</string>
+    <string name="request_an_app">给我一个应用</string>
     <string name="request_an_app_hint">你想要什么样的应用?</string> 
     <string name="err_no_content">请输入内容</string>
     <string name="trending_apps">热议应用</string> 
@@ -264,4 +264,9 @@
    	<string name="onWeiBoNotInstalled">您没有安装腾讯微博客户端</string>
    	<string name="onWeiboVersionMisMatch">您的腾讯微博客户端版本不匹配</string>
    			
+    <string name="a_request">一个问题</string>
+    <string name="add_an_app">添加一个应用</string>
+    <string name="menu_requests">问题</string>
+    <string name="menu_shares">分享</string>
+    
 </resources>

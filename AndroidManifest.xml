@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.576" android:versionCode="1576">
+      android:versionName="1.583" android:versionCode="1583">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
@@ -39,7 +39,8 @@
 	    <activity android:name="goofy2.swably.GuideLocalApps" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
 	    <activity android:name="goofy2.swably.GuideSnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.GuideTerms" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.Home" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.HelpRequests" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.Home" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
 	    <activity android:name="goofy2.swably.Invite" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.InviteContacts" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.InviteSnsFriends" android:screenOrientation="portrait"/>
@@ -111,6 +112,7 @@
         <activity android:name="goofy2.swably.ShareActivity" android:theme="@style/defaultDialog" />
         <activity android:name=".SharePrivateActivity" android:theme="@style/defaultDialog" />
         <activity android:name=".SharePublicActivity" android:theme="@style/defaultDialog" />
+	    <activity android:name="goofy2.swably.SharingPosts" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.SignedIn" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.SnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name=".Start" android:screenOrientation="portrait"/>
