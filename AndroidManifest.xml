@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.583" android:versionCode="1583">
+      android:versionName="1.6" android:versionCode="1600">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.AddWatcher" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.App" android:screenOrientation="portrait" >
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
@@ -100,6 +101,13 @@
 	        <meta-data android:name="android.app.searchable"
 	                   android:resource="@xml/search_users"/>
 	    </activity>
+        <activity android:name="goofy2.swably.SearchWatcher" android:launchMode="singleTop" android:screenOrientation="portrait">
+	        <intent-filter>
+	            <action android:name="android.intent.action.SEARCH" />
+	        </intent-filter>
+	        <meta-data android:name="android.app.searchable"
+	                   android:resource="@xml/search_users"/>
+        </activity>
 	    <activity android:name="goofy2.swably.SelectLocalAppToReview" android:theme="@style/SelectLocalAppsActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />

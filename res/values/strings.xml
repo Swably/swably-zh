@@ -268,5 +268,9 @@
     <string name="add_an_app">添加一个应用</string>
     <string name="menu_requests">问题</string>
     <string name="menu_shares">分享</string>
+	<string name="replies_count_x">%d条回复</string>   
+    
+    <string name="add_watcher">+ 朋友</string>
+    <string name="mention">提醒</string>
     
 </resources>
