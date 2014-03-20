@@ -195,7 +195,7 @@
     <string name="search_apps">搜索应用</string> 
     <string name="search_query">搜索 %s</string> 
     <string name="search_apps_hint">搜索应用名称</string> 
-    <string name="search_users_hint">搜索用户名字</string> 
+    <string name="search_users_hint">输入用户名字</string> 
     <string name="search_no_result">没有找到\"%s\"的搜索结果</string> 
 	<string name="joining_noti_title">%s加入了万宝乐</string>			    
 	<string name="new_joins_count">%d位朋友加入了万宝乐</string>
@@ -270,7 +270,10 @@
     <string name="menu_shares">分享</string>
 	<string name="replies_count_x">%d条回复</string>   
     
-    <string name="add_watcher">+ 朋友</string>
+    <string name="add_watcher">+ 提醒</string>
+    <string name="mention_title">提醒朋友</string>
     <string name="mention">提醒</string>
+    <string name="menu_notifications">通知</string>
+    <string name="add_a_review">添加一条评论</string>
     
 </resources>
