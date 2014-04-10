@@ -132,7 +132,7 @@
 	<string name="invited">已邀请</string>
 	<string name="invites_left">你还有 %d个邀请</string>
 	<string name="send_invite_to">发送邀请给</string>
-	<string name="installed">已安装应用</string>
+	<string name="installed_apps">已安装应用</string>
 	<string name="claimed">已认领</string>
 	<string name="claimed_count">已认领%d个</string>
 	<string name="starred">收藏</string>
@@ -215,7 +215,7 @@
     <string name="uploading_cap">正在上传</string> 
     <string name="downloading_cap">正在下载</string> 
     <string name="slogon">你想要什么应用？\n问万宝乐</string> 
-    <string name="editing">编辑</string> 
+    <string name="editing">发布评论</string> 
     <string name="got_it">知道了</string> 
     <string name="availability">尚未分享</string> 
     <string name="description_cap">说明</string> 
@@ -275,5 +275,9 @@
     <string name="mention">提醒</string>
     <string name="menu_notifications">通知</string>
     <string name="add_a_review">添加一条评论</string>
+    
+    <string name="new_feeds_count">%d条新消息</string>
+
+    <string name="system_apps">系统应用</string>
     
 </resources>

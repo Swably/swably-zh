@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.65" android:versionCode="1650">
+      android:versionName="1.7" android:versionCode="1700">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.AddApp" android:theme="@style/SelectLocalAppsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+	    </activity>
         <activity android:name="goofy2.swably.AddWatcher" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.App" android:screenOrientation="portrait" >
 			<intent-filter>
@@ -16,7 +23,7 @@
 	        </intent-filter> 
         </activity>
         <activity android:name="goofy2.swably.AppAbout" android:screenOrientation="portrait"/>
-        <activity android:name="goofy2.swably.Apps" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut">
+        <activity android:name="goofy2.swably.Apps" android:screenOrientation="portrait">
 			<meta-data android:name="android.app.default_searchable"
 	            android:value="goofy2.swably.SearchApps" />
         </activity>
@@ -24,7 +31,7 @@
         <activity android:name="goofy2.swably.AppUploaders" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Claiming" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Cover" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"/>
-   	    <activity android:name="goofy2.swably.DownloadingApp" android:theme="@style/defaultActivity.faceInOut" android:screenOrientation="portrait"/>
+   	    <activity android:name="goofy2.swably.DownloadingApp" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Feeds" android:screenOrientation="portrait"/>
    	    <activity android:name="goofy2.swably.FindPeople" android:screenOrientation="portrait"  >
 			<intent-filter>
@@ -35,18 +42,18 @@
 				      android:path="/friend" />
 	        </intent-filter>
 	    </activity>
-	    <activity android:name="goofy2.swably.GuideInviteSnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-	    <activity android:name="goofy2.swably.GuideInviteContacts" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-	    <activity android:name="goofy2.swably.GuideInvite" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-	    <activity android:name="goofy2.swably.GuideLocalApps" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-	    <activity android:name="goofy2.swably.GuideSnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideInviteSnsFriends" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.GuideInviteContacts" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.GuideInvite" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.GuideLocalApps" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.GuideSnsFriends" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.GuideTerms" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.HelpRequests" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-        <activity android:name="goofy2.swably.Home" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.HelpRequests" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.Home" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.Invite" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.InviteContacts" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.InviteSnsFriends" android:screenOrientation="portrait"/>
-   	   	<activity android:name="goofy2.swably.LocalApps" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+   	   	<activity android:name="goofy2.swably.LocalApps" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.LocalSignin" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.Main" android:screenOrientation="portrait">
             <intent-filter>
@@ -61,11 +68,11 @@
 				      android:path="/signin" />
 	        </intent-filter>
         </activity>
-        <activity android:name="goofy2.swably.Me" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-        <activity android:name="goofy2.swably.MyFollowingReviews" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
-        <activity android:name="goofy2.swably.MyReviews" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.Me" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.MyFollowingReviews" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.MyReviews" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.OAuthSignin" android:theme="@android:style/Theme.NoTitleBar"/>
-        <activity android:name="goofy2.swably.People" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut">
+        <activity android:name="goofy2.swably.People" android:screenOrientation="portrait">
 			<meta-data android:name="android.app.default_searchable"
 	            android:value="goofy2.swably.SearchUsers" />
         </activity>
@@ -78,7 +85,7 @@
 				      android:path="/sync" />
 	        </intent-filter>
 		</activity>
-        <activity android:name="goofy2.swably.PublicReviews" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.PublicReviews" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.ReviewProfile" android:screenOrientation="portrait" >
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
@@ -110,25 +117,20 @@
 	                   android:resource="@xml/search_users"/>
         </activity>
 	    <activity android:name="goofy2.swably.SelectLocalAppToReview" android:theme="@style/SelectLocalAppsActivity" android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-				<category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
-            </intent-filter>
 	    </activity>
         <activity android:name="goofy2.swably.SelectLocalAppToPick" android:theme="@style/PickLocalAppsActivity" android:screenOrientation="portrait"/>
-        <activity android:name="goofy2.swably.Settings" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.Settings" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.ShareActivity" android:theme="@style/defaultDialog" />
         <activity android:name=".SharePrivateActivity" android:theme="@style/defaultDialog" />
         <activity android:name=".SharePublicActivity" android:theme="@style/defaultDialog" />
-	    <activity android:name="goofy2.swably.SharingPosts" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.SharingPosts" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.SignedIn" android:screenOrientation="portrait"/>
-        <activity android:name="goofy2.swably.SnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.SnsFriends" android:screenOrientation="portrait"/>
         <activity android:name=".Start" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.Suggestions" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Terms" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.UploadApp" android:screenOrientation="portrait"/>
-        <activity android:name="goofy2.swably.UploadingApp" android:theme="@style/defaultActivity.faceInOut" android:screenOrientation="portrait"/>
+        <activity android:name="goofy2.swably.UploadingApp" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.User" android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
