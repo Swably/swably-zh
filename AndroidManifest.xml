@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.7" android:versionCode="1700">
+      android:versionName="1.83" android:versionCode="1830">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
@@ -42,11 +42,12 @@
 				      android:path="/friend" />
 	        </intent-filter>
 	    </activity>
-	    <activity android:name="goofy2.swably.GuideInviteSnsFriends" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.GuideInviteContacts" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.GuideInvite" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.GuideLocalApps" android:screenOrientation="portrait"/>
-	    <activity android:name="goofy2.swably.GuideSnsFriends" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.GuideInviteSnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideInviteContacts" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideInvite" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideLocalApps" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideRecommendUsers" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+	    <activity android:name="goofy2.swably.GuideSnsFriends" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.GuideTerms" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.HelpRequests" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Home" android:screenOrientation="portrait"/>
@@ -85,7 +86,7 @@
 				      android:path="/sync" />
 	        </intent-filter>
 		</activity>
-        <activity android:name="goofy2.swably.PublicReviews" android:screenOrientation="portrait"/>
+	    <activity android:name="goofy2.swably.PublicReviews" android:screenOrientation="portrait"/>
 	    <activity android:name="goofy2.swably.ReviewProfile" android:screenOrientation="portrait" >
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
@@ -96,6 +97,13 @@
 	        </intent-filter>
 	    </activity>
 	    <activity android:name="goofy2.swably.SearchApps" android:launchMode="singleTop" android:screenOrientation="portrait" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.SEARCH" />
+	        </intent-filter>
+	        <meta-data android:name="android.app.searchable"
+	                   android:resource="@xml/search_apps"/>
+	    </activity>
+	    <activity android:name="goofy2.swably.SearchApps2Add" android:launchMode="singleTop" android:screenOrientation="portrait" >
 	        <intent-filter>
 	            <action android:name="android.intent.action.SEARCH" />
 	        </intent-filter>
@@ -175,8 +183,8 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-<!-- 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-	<uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+<!-- 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
     <supports-screens android:smallScreens="true" 
     				  android:normalScreens="true" 
                       android:largeScreens="true" 
