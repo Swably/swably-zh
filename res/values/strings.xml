@@ -287,4 +287,7 @@
 
     <string name="recommend_friends">推荐关注</string>
     
+    <string name="following_apps">关注的应用</string>
+    <string name="following_users">关注的人</string>
+    <string name="starred_posts">收藏的帖子</string>
 </resources>
