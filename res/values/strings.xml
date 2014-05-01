@@ -57,7 +57,7 @@
 	<string name="checking_update">正在检查更新...</string>
 	<string name="notification">通知</string>
 	<string name="notification_cap">通知</string>
-	<string name="notification_desc">在我关注的人有新消息时通知我</string>
+	<string name="notification_desc">有和我相关的新消息时通知我</string>
 	<string name="app_version">版本%s</string>
 	<string name="app_version_short">v %s</string>
 	<string name="app_size">大小%.2fMB</string>
@@ -290,4 +290,6 @@
     <string name="following_apps">关注的应用</string>
     <string name="following_users">关注的人</string>
     <string name="starred_posts">收藏的帖子</string>
+
+    <string name="thumbnail_hint">点击图片打开原图</string>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="goofy2.swably.zh"
-      android:versionName="1.84" android:versionCode="1840">
+      android:versionName="1.853" android:versionCode="1853">
  	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15"/>
     <application android:name=".ApplicationZh" android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@style/defaultActivity">
         <activity android:name="goofy2.swably.About" android:theme="@style/defaultDialog" android:screenOrientation="portrait"/>
