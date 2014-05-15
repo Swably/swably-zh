@@ -297,4 +297,12 @@
 
     <string name="post_success">发送成功</string>
     <string name="prompt_to_mention">轻按以提醒朋友</string>
+
+    <string name="btn_download">下载</string>
+    <string name="btn_upload">上传</string>
+    <string name="btn_upadte">更新</string>
+    <string name="btn_install">安装</string>
+    <string name="btn_open">打开</string>
+    <string name="btn_stop">禁止下载</string>
+    <string name="btn_add_app">加应用</string>
 </resources>
