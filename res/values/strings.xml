@@ -214,7 +214,7 @@
     <string name="upload_cap">上传</string> 
     <string name="uploading_cap">正在上传</string> 
     <string name="downloading_cap">正在下载</string> 
-    <string name="slogon">你想要什么应用？\n问万宝乐</string> 
+    <string name="slogon">应用永不嫌多</string> 
     <string name="editing">发布评论</string> 
     <string name="got_it">知道了</string> 
     <string name="availability">尚未分享</string> 
@@ -223,7 +223,7 @@
     <string name="bookmark">收藏</string> 
     <string name="following_cap">关注</string> 
     <string name="followers_cap">粉丝</string> 
-    <string name="starred_apps_cap">收藏的应用</string> 
+    <string name="starred_apps">收藏的应用</string> 
     <string name="claimed_apps_cap">认领的应用</string>
     <string name="skip">跳过</string>
     <string name="search">搜索</string> 
@@ -289,7 +289,12 @@
     
     <string name="following_apps">关注的应用</string>
     <string name="following_users">关注的人</string>
-    <string name="starred_posts">收藏的帖子</string>
+    <string name="starred_posts">赞过的帖子</string>
 
     <string name="thumbnail_hint">点击图片打开原图</string>
+
+    <string name="in_reply_to_x">回复 %s</string>
+
+    <string name="post_success">发送成功</string>
+    <string name="prompt_to_mention">轻按以提醒朋友</string>
 </resources>
