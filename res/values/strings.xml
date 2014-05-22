@@ -137,7 +137,7 @@
 	<string name="claimed_count">已认领%d个</string>
 	<string name="people">朋友</string>
 	<string name="starred_count">%d个收藏</string>
-	<string name="a_review">一条评论</string>
+	<string name="a_review">评论</string>
 	<string name="add_a_review">添加一条评论</string>
 	<string name="version">版本</string>
 	<string name="version_cap">版本</string>
@@ -310,4 +310,6 @@
     <string name="posts">评论</string>
     <string name="downloads">下载</string>
     <string name="starred">收藏</string>
+    <string name="user_details_x" formatted="false">%d条评论   %d次上传</string>
+    <string name="hearted">赞过</string>
 </resources>
