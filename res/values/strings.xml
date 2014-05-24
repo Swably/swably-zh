@@ -263,13 +263,13 @@
    	<string name="onWeiBoNotInstalled">您没有安装腾讯微博客户端</string>
    	<string name="onWeiboVersionMisMatch">您的腾讯微博客户端版本不匹配</string>
    			
-    <string name="a_request">一个问题</string>
+    <string name="a_request">问题</string>
     <string name="add_an_app">添加一个应用</string>
     <string name="menu_requests">问题</string>
     <string name="menu_shares">分享</string>
 	<string name="replies_count_x">%d条回复</string>   
     
-    <string name="add_watcher">+ 提醒</string>
+    <string name="add_watcher">提醒关注</string>
     <string name="mention_title">提醒朋友</string>
     <string name="mention">提醒</string>
     <string name="menu_notifications">通知</string>
@@ -303,7 +303,7 @@
     <string name="btn_install">安装</string>
     <string name="btn_open">打开</string>
     <string name="btn_stop">禁止下载</string>
-    <string name="btn_add_app">加应用</string>
+    <string name="btn_add_app">推荐应用</string>
 
     <string name="menu_posts">分享</string>
     <string name="app_details_x" formatted="false">大小%.1fM，版本%s</string>
