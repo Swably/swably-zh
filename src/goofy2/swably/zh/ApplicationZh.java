@@ -19,6 +19,7 @@ public class ApplicationZh extends SwablyApplication {
 		Const.DEFAULT_UPLOAD_HOST = "uploadzh.swably.com";
 		super.setConst();
 		Const.APP_NAME = "万宝乐";
+		Const.APK_FOLEDER_NAME = "wanbaole";
 		Const.LOAD_FONTS = false;
 		Const.LANG = "zh";
 //		Const.UPGRADE_URL = "/downloads/swably_zh.apk";
