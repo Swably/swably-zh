@@ -28,6 +28,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 		final String shareSubject = getIntent().getStringExtra(Const.KEY_SUBJECT);
 		final String shareReview = getIntent().getStringExtra(Const.KEY_REVIEW);
 		final String shareApp = getIntent().getStringExtra(Const.KEY_APP);
+		final String shareUrl = getIntent().getStringExtra(Const.KEY_URL);
 
 		//for wechat timeline
 //		regToWx();
@@ -83,6 +84,7 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 				}else{
 					title = shareSubject;
 					description = shareText;
+					url = shareUrl;
 				}
 				
 //				bitmap = Utils.getImageFromFile(getApplicationContext(), Utils.getImageFileName(iconUrl), 42, 42); // 微信要求thumbData不能超过32KB,即84*84

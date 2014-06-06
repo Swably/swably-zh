@@ -273,7 +273,6 @@
     <string name="mention_title">提醒朋友</string>
     <string name="mention">提醒</string>
     <string name="menu_notifications">通知</string>
-    <string name="add_a_review">添加一条评论</string>
     
     <string name="new_feeds_count">%d条新消息</string>
 
@@ -313,4 +312,8 @@
     <string name="user_details_x" formatted="false">%d条评论   %d次上传</string>
     <string name="hearted">赞过</string>
     <string name="conversation">对话</string>
+
+    <string name="menu_recommend">推荐万宝乐</string>
+    <string name="recommend_text">万宝乐是朋友分享APP的网络，可以发现很多平时发现不了的APP。加入小伙伴们吧！</string>
+    
 </resources>
