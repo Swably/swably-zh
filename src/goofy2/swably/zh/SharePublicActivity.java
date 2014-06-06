@@ -75,9 +75,14 @@ public class SharePublicActivity extends goofy2.swably.SharePublicActivity {
 					try {
 						JSONObject review = new JSONObject(shareReview);
 						App app = new App(review.optJSONObject("app"));
-						title = "#" + app.getName() + " " + review.optString("content") + " -- @" + review.optJSONObject("user").optString("screen_name");
+						if(app.getJSON() != null){
+							title = "#" + app.getName();
+							iconUrl = app.getIcon();
+						}else{
+							title = "#" + getString(R.string.a_request);
+						}
+						title += " " + review.optString("content") + " -- @" + review.optJSONObject("user").optString("screen_name");
 						url = Utils.genReviewUrl(review);
-						iconUrl = app.getIcon();
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

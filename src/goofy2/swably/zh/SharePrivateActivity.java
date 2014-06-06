@@ -73,10 +73,14 @@ public class SharePrivateActivity extends goofy2.swably.SharePrivateActivity {
 					try {
 						JSONObject review = new JSONObject(shareReview);
 						App app = new App(review.optJSONObject("app"));
-						title = app.getName();
+						if(app.getJSON() != null){
+							title = app.getName();
+							iconUrl = app.getIcon();
+						}else{
+							title = getString(R.string.a_request);
+						}
 						description = review.optString("content") + " -- @" + review.optJSONObject("user").optString("screen_name");
 						url = Utils.genReviewUrl(review);
-						iconUrl = app.getIcon();
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
