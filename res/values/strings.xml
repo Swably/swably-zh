@@ -120,8 +120,7 @@
 	<string name="friends">朋友</string>
 	<string name="following_reviews">关注的评论</string>
 	<string name="friends_on">%s上的朋友</string>
-	<string name="friends_on_swably">你可能认识的人</string>
-	<string name="friends_on_swably_cap">你可能认识的人</string>
+	<string name="friends_on_swably">你的朋友</string>
 	<string name="zero_friend">嗯，看来你在万宝乐上没有认识的朋友</string>
 	<string name="contacts">联系人</string>
 	<string name="new_reviews_count">%d条新评论</string>
@@ -315,5 +314,8 @@
 
     <string name="menu_recommend">推荐万宝乐</string>
     <string name="recommend_text">万宝乐是朋友分享APP的网络，可以发现很多平时发现不了的APP。加入小伙伴们吧！</string>
+    <string name="invite_prompt1" formatted="false">%s, 你有%d个朋友加入了万宝乐</string>
+    <string name="invite_prompt2" >越多朋友，越多应用，越多乐趣。</string>
+    <string name="invite_more" >邀请朋友</string>
     
 </resources>
