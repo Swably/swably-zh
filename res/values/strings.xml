@@ -314,8 +314,7 @@
 
     <string name="menu_recommend">推荐万宝乐</string>
     <string name="recommend_text">万宝乐是朋友分享APP的网络，可以发现很多平时发现不了的APP。加入小伙伴们吧！</string>
-    <string name="invite_prompt1" formatted="false">%s, 你有%d个朋友加入了万宝乐</string>
-    <string name="invite_prompt2" >越多朋友，越多应用，越多乐趣。</string>
+    <string name="invite_prompt" formatted="false">%s, 你有%d个朋友加入了万宝乐。越多朋友，越多应用，越多乐趣。</string>
     <string name="invite_more" >邀请朋友</string>
     
 </resources>
