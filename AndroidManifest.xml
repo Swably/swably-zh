@@ -12,6 +12,7 @@
                 <data android:mimeType="image/*" />
             </intent-filter>
 	    </activity>
+        <activity android:name="goofy2.swably.AddTag" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.AddWatcher" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.App" android:screenOrientation="portrait" >
 			<intent-filter>
@@ -28,6 +29,7 @@
 	            android:value="goofy2.swably.SearchApps" />
         </activity>
         <activity android:name="goofy2.swably.AppHistory" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
+        <activity android:name="goofy2.swably.AppTags" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.AppUploaders" android:screenOrientation="portrait" android:theme="@style/defaultActivity.faceInOut"/>
         <activity android:name="goofy2.swably.Claiming" android:screenOrientation="portrait"/>
         <activity android:name="goofy2.swably.Cover" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"/>
