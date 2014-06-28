@@ -324,4 +324,6 @@
     <string name="select">选择</string>
     <string name="add">增加</string>
     <string name="err_invalid_tag">标签中不能包含标点符号</string>
+    <string name="zero_app_tag_prompt">这个应用还没有任何标签，做第一个加标签的人吧！</string>
+    <string name="tag_the_app">加标签</string>
 </resources>
